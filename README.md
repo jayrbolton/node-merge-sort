@@ -2,46 +2,36 @@
 
 > Merge sort implementation
 
-background details relevant to understanding what this module does
+Features
+* O(n log n) performance
+* Stable sort
+* Generalized -- pass in your own comparison function
 
 ## Usage
 
 ```js
-var nodeMergeSort = require('node-merge-sort')
+var sort = require('@jayrbolton/merge-sort')
 
-console.log('hello warld')
+var sorted = sort([5, 2, 4, 7, 1, 3, 2, 6])
 ```
 
 outputs
 
 ```
-hello warld
+[1, 2, 3, 4, 5, 6, 7]
 ```
-
-## API
-
-```js
-var nodeMergeSort = require('node-merge-sort')
-```
-
-See [api_formatting.md](api_formatting.md) for tips.
 
 ## Install
 
 With [npm](https://npmjs.org/) installed, run
 
 ```
-$ npm install node-merge-sort
+$ npm install @jayrbolton/merge-sort
 ```
 
-## Acknowledgments
+## Benchmarks
 
-node-merge-sort was inspired by..
-
-## See Also
-
-- [`noffle/common-readme`](https://github.com/noffle/common-readme)
-- ...
+A simple benchmark in [/benchmark](/benchmark) shows merge sort to be marginally faster than the built-in sort function.
 
 ## License
 
